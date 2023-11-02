@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
+import { AngularMaterialModule } from '../angular-material/angular-material.module';
+
+
 
 const routes:Routes=[
   {
@@ -22,7 +25,8 @@ const routes:Routes=[
   declarations: [],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    
   ]
 })
 export class CoreModule { }

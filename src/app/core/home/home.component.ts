@@ -8,16 +8,17 @@ import { SignupComponent } from '../signup/signup.component';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+  name: any;
+  animal: any;
   constructor(public dialog: MatDialog) {}
 
 
 
-   
+
 
     signUp(): void {
-    const dialogRef = this.dialog.open(SignupComponent, {
-      // data: {name: this.name, animal: this.animal},
-    });
+    const dialogRef = this.dialog.open(SignupComponent,{width:'46rem',height:'30rem'}
+       );
 
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');

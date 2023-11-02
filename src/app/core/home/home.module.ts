@@ -27,7 +27,8 @@ const routes:Routes=[
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    AngularMaterialModule
+    AngularMaterialModule,
+    
   ]
 })
 export class HomeModule { }
