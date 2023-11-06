@@ -59,30 +59,35 @@ export class SignupComponent {
     return this.signUpForm.get('lastname')
   }
   get gender(){
-    return this.signUpForm.get('firstname')
+    return this.signUpForm.get('gender')
   }
   get picker(){
-    return this.signUpForm.get('firstname')
+    return this.signUpForm.get('picker')
   }
 
   get address(){
-    return this.signUpForm.get('firstname')
+    return this.signUpForm.get('address')
   }
   get state(){
-    return this.signUpForm.get('firstname')
+    return this.signUpForm.get('state')
   }
   get city(){
-    return this.signUpForm.get('firstname')
+    return this.signUpForm.get('city')
   }
   
   get pincode(){
-    return this.signUpForm.get('firstname')
+    return this.signUpForm.get('pincode')
   }
   
   get mobile(){
-    return this.signUpForm.get('firstname')
+    return this.signUpForm.get('mobile')
   }
   
+
+
+  Submit(){
+    console.log(this.signUpForm.value)
+  }
 
   onNoClick(): void {
     this.dialogRef.close();
